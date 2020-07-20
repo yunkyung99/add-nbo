@@ -1,6 +1,10 @@
 #include "add-nbo.h"
-#include "add-nbo.cpp"
 #include <arpa/inet.h>
+
+typedef union data{
+        uint32_t uint32;
+        uint8_t uint8[17];
+}Data;
 
 int main(int argc, char* argv[]){
 
